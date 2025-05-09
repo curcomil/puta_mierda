@@ -1,3 +1,15 @@
+@import "./styles/fonts.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  background-color: black;
+}
+
+body {
+  @apply bg-cover bg-center bg-no-repeat min-h-screen;
+  background-image: url("./assets/main3.webp");
+  background-attachment: fixed;
+  overflow-x: hidden;
+}

@@ -1,0 +1,8 @@
+@import "@fontsource-variable/roboto-mono";
+
+@font-face {
+  font-family: "Punktype";
+  src: url("/Fonts/Punktype.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
