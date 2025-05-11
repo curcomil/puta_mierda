@@ -13,3 +13,20 @@ body {
   background-attachment: fixed;
   overflow-x: hidden;
 }
+
+/* Estilo base para scrollbars (Webkit) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* default invisible */
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* visible solo en hover del contenedor */
+.feed_main:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}

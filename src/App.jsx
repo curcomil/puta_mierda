@@ -9,7 +9,7 @@ import Navbar from "./layouts/Navbar";
 export default function App() {
   return (
     <Router>
-      <div className="p-5">
+      <div className="h-screen flex flex-col p-5">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
