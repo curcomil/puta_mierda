@@ -22,7 +22,7 @@ const Aside_right = () => {
         <div>
           <Link to="/rabia" className="flex flex-row items-end mt-5">
             <img className="w-12 h-16" src={rabia} alt="" />
-            <div className="tooltip" data-tip="Ensayos">
+            <div className="tooltip tooltip-bottom" data-tip="Ensayos">
               <p className="ml-2">Rabia y argumentos</p>
             </div>
           </Link>
@@ -30,7 +30,7 @@ const Aside_right = () => {
         <div>
           <Link to="/diseño" className="flex flex-row items-end mt-5">
             <img className="w-12 aspect-square" src={no_es_diseño} alt="" />
-            <div className="tooltip" data-tip="Ilustraciones">
+            <div className="tooltip tooltip-bottom" data-tip="Ilustraciones">
               <p className="ml-2">No es diseño</p>
             </div>
           </Link>
@@ -42,7 +42,7 @@ const Aside_right = () => {
               src={nos_vemos_en_la_calle}
               alt=""
             />
-            <div className="tooltip" data-tip="Convocatorias">
+            <div className="tooltip tooltip-bottom" data-tip="Convocatorias">
               <p className="ml-2">Nos vemos en la calle</p>
             </div>
           </Link>
@@ -50,7 +50,7 @@ const Aside_right = () => {
         <div>
           <Link to="/banqueta" className="flex flex-row items-end mt-5">
             <img className="w-12 aspect-square" src={la_banqueta} alt="" />
-            <div className="tooltip" data-tip="Discusiones">
+            <div className="tooltip tooltip-bottom" data-tip="Discusiones">
               <p className="ml-2">La banqueta</p>
             </div>
           </Link>

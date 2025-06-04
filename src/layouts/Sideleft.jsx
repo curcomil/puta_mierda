@@ -15,15 +15,37 @@ const Sideleft = () => {
             <p>Home</p>
           </Link>
         </div>
-        <div className="flex items-center flex-col mt-4">
-          <Link className="flex flex-col items-center" to="/publicar">
-            <img
-              src={publicar}
-              alt="publicar_icon"
-              className="w-12 aspect-square"
-            />
-            <p>Publicar</p>
-          </Link>
+        <div
+          className="flex items-center flex-col mt-4 dropdown dropdown-right"
+          tabIndex={0}
+          role="button"
+        >
+          <img
+            src={publicar}
+            alt="publicar_icon"
+            className="w-12 aspect-square"
+          />
+          <p>Publicar</p>
+          <ul
+            tabIndex={0}
+            className="dropdown-content menu bg-black/90 rounded-box z-1 w-52 p-2 shadow-sm"
+          >
+            <li>
+              <Link to="/publicar?tipo=nota">Nota</Link>
+            </li>
+            <li>
+              <Link to="/publicar?tipo=ensayo">Ensayo</Link>
+            </li>
+            <li>
+              <Link to="/publicar?tipo=ilustración">Ilustración</Link>
+            </li>
+            <li>
+              <Link to="/publicar?tipo=convocatoria">Convocatoria</Link>
+            </li>
+            <li>
+              <Link to="/publicar?tipo=foro">Foro</Link>
+            </li>
+          </ul>
         </div>
         <div className="flex flex-col mt-4">
           <Link to="/archivo" className="flex flex-col items-center">
