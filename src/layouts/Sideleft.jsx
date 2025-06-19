@@ -2,6 +2,7 @@
 import home from "../assets/icons/home.png";
 import publicar from "../assets/icons/publicar.png";
 import archivo from "../assets/icons/archivo.png";
+import perfil from "../assets/icons/perfil.png";
 
 //Componentes
 import layout from "../assets/icons/layout_quick.png";
@@ -94,13 +95,20 @@ const Sideleft = ({ quick_note_modal, user }) => {
         </div>
 
         <div className="flex flex-col mt-4">
-          <Link to="/archivo" className="flex flex-col items-center">
-            <img
-              src={archivo}
-              alt="archivo_icon"
-              className="w-12 aspect-square"
-            />
-            <p>Archivo</p>
+          <Link
+            to={user_data ? "/archivo" : "login"}
+            className="flex flex-col items-center content-center"
+          >
+            {user_data ? (
+              <img
+                src={archivo}
+                alt="archivo_icon"
+                className="w-12 aspect-square"
+              />
+            ) : (
+              <img src={perfil} className="w-12" />
+            )}
+            {user_data ? <p>Archivo</p> : <p className="text-center">Login</p>}
           </Link>
         </div>
       </div>
